@@ -1,4 +1,4 @@
-
+#removes the background from an image
 from rembg import *
 from PIL import Image
 input_path = '/home/frank/Downloads/test1.jpeg'
