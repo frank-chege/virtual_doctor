@@ -1,65 +1,324 @@
-/*appointment button in services page*/
-.appointment{
+/*icons on forms*/
+#icon{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+/*arrows outside containers*/
+section .button a img{
+    height: 2rem;
+    width: 5rem;
+}
+/*buttons outside containers*/
+.button{
+    display: block;
+    width: 60vw;
+    background-color: #d5eef1;
+    border-radius: 0.5rem;
+}
+.button p{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-right: 1rem;
+    color: blue;
+}
+/*button links*/
+.button a{
+    text-decoration: none;
+}
+/*navbar for large devices*/
+.large{
+    display: none;
+}
+/*phone div*/
+.phone{
+    background-color: white;
+    padding-top: 0.5rem;
+    width: 100vw;
+    height: 4rem;
     display: flex;
-    position: fixed;
+    background-color: #d5eef1;
+    justify-content: center;
+}
+/*logo shown on top of page*/
+#phone_logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
     z-index: 3;
-    bottom: 2rem;
-    right: 0.5rem;
+    padding-left: 2rem;
+}
+/*div above the navigation bar*/
+.phone p{
+    padding-top: 0.5rem;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+    font-family: sans-serif;
 }
 
-.appointment a button{
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #d5eef1;
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    width: 100vw;
+}
+/*side menu*/
+ .cont{
+    display: none;
+    top: 0;
+    flex-direction: column;
+    position: fixed;
+    z-index: 3;
+    justify-content: flex-end;
+    border: solid #bdbbbb;
+    border-width: 1px;
+    border-radius: 0.75rem;
+    width: 30vw;
+    margin-left: 70vw;
+    background-color: #d5eef1;
+}
+/*side menu links*/
+ .cont a{
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    padding: 0.75rem;
+}
+/*side menu links hovering*/
+.cont a:hover {
+    background-color:;
+    color: black;
+}
+/*side menu image*/
+#menu_img{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+/*navbar links*/
+.navbar a {
+    display: flex;
+    flex-grow: 0.2;
+    justify-content: center;
+    align-items: center;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 0%;
+}
+/*navbar links hovering*/
+
+/* elements over the slideshow */
+.text {
+    font-size: 15px;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+/*search bar*/
+.text .search{
+    bottom: 1.1rem;
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    position: relative;
+    z-index: 2;
+}
+/* search bar input*/
+.text .search input[type="search"] {
+    width: 14rem; 
+    border: solid rgb(107, 105, 105);
+    border-width: 1px;
+    margin-right: 0.2rem;
+    border-radius: 0.75rem;
+    background-color: #edf7f8;
+    color: #070707; 
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+/*search bar submit button*/
+.text .search input[type="submit"] {
+    width: 4rem; 
+    border: solid #d5eef1;
+    border-width: 1px;
+    border-radius: 0.75rem;
+    background-color: #d5eef1; 
+    color: #070707; 
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/*search bar submit button hovering*/
+.text .search input[type="submit"]:hover{
+    background-color: #38a3e0;
+}
+/*intro message on the landing page*/
+.text h1{
+    margin-bottom: 15vh;
+    font-size: 2.5rem;
+    color: #3b2828;
+}
+/*landing page booking button*/
+.text a button{
     font-size: 1.4rem;
     text-decoration: none;
     border-radius: 0.75rem;
     font-family: sans-serif;
     height: 2.5rem;
     width: 16rem;
-    background-color: #cccccc;
+    background-color: #d5eef1;
+    cursor: pointer;
+    border-color: #d5eef1;
+}
+/*button hovering*/
+.text a button:hover{
+    background-color: #38a3e0;
+}
+/*appointment div in services page*/
+.appointment{
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    bottom: 3rem;
+    right: 0%;
+}
+/*appointment button in services page*/
+.appointment a button{
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    font-family: sans-serif;
+    height: 3rem;
+    width: 18rem;
+    background-color: #72c6cf;
     cursor: pointer;
     align-self: flex-end;
-  }
-  .appointment a button:hover{
-    background-color: #c7d7e0;;
-  }
-/*footer for the services page*/
- .serv_footer{
-    z-index: 4;
-    position: relative;
 }
+/*button hovering*/
+.appointment a button:hover{
+    background-color: #38a3e0;
+}
+/*body*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #f0ffef;
+}
+/*landing page intro container*/
+.container_intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+.container_intro section {
+    flex-basis: 40vw;
+    border-radius: 0.5rem;
+    margin: 0.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: #ffffff;
 
+}
+/*h3*/
+h3{
+    text-align: center;
+}
+.container_intro section:hover{
+    /*border: solid #d8d8d8;
+    border-width: 0.2rem;*/
+    box-shadow: 0 0 0 2px rgba(151, 149, 149, 0.5);
+}
+/* content container*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*container section*/
+.container section {
+    flex-basis: 30vw;
+    border-radius: 0.5rem;
+    margin: 0.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #ffffff;
+}
+p {
+    margin-left: 1rem;
+    color: #080808;
+    text-align: left;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+.container section p button{
+    background-color: #d5eef1;
+    font-size: 0.7rem;
+    border: solid #d5eef1;
+    border-radius: 0.3rem;
+    border-width: 1.5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    height: 1.1rem;
+}
+.container section p button:hover{
+    background-color: #38a3e0;
+}
+.container section img {
+    height: 28vw;
+    width: 28vw;
+    text-align: center;
+}
+/*container sections*/
 .section
 {
     display: flex;
     justify-content: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    
 }
+/*forms*/
 section form{
     display: block;
     border-radius: 1rem;
-    width: 50vw;
-    font-size: 1.2rem;
+    width: 55vw;
     background-color: #ffffff;
 }
 /* Style each form group (label and input) */
 form .form-group {
-    display: flex;
+    display: block;
     justify-content: centre;
-    margin: 0.75rem;
+    margin: 0.5rem;
 }
-
+/*form labels*/
 form .form-group label{
     text-align: left;
-    margin-left: 1vw;
+    margin: 0.3rem;
     width: 20vw;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
+/*form input fields*/
 form .form-group input{
-    margin-right: 1vw;
+    margin: 0.3rem;
     width: 40vw;
-    height: 2rem;
-    border-radius: 0.5rem;
+    height: 1.5rem;
+    border-radius: 0.3rem;
     border-width: 0.1rem;
     font-size: 0.9rem;
 }
@@ -87,7 +346,6 @@ form .submit input[type="submit"]{
 .form_link a{
     text-decoration: none;
     margin: 1.2rem;
-    
 }
 /* Change the background color of the submit button when hovered over */
 input[type="submit"]:hover {
@@ -137,84 +395,6 @@ h2{
     display: flex;
     justify-content: center;
 }
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-}
-/* Navigation Bar Styles */
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-    height: 6rem;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    width: 100vw;
-}
- .cont{
-    display: none;
-    margin-top: 0;
-    flex-direction: column;
-    position: fixed;
-    z-index: 3;
-    justify-content: flex-end;
-    border: solid #bdbbbb;
-    border-width: 1px;
-    border-radius: 0.75rem;
-    width: 30vw;
-    margin-left: 70vw;
-    background-color: #ffffff;
-    
-}
-
- .cont a{
-    
-    font-size: 3vh;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: rgb(15, 15, 15);
-    padding: 0.75rem;
-    
-}
-.cont a:hover {
-    background-color: #ebebeb;
-    color: black;
-}
-
-#menu_img{
-    width: 3rem;
-    height: 3rem;
-    margin-top: 0.5rem;
-    cursor: pointer;
-}
-.navbar a {
-    display: flex;
-    flex-grow: 0.2;
-    justify-content: center;
-    align-items: center;
-    color: rgb(15, 15, 15);
-    padding-left: 0;
-    padding-right: 1rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    margin-left: 0%;
-}
-#logo{
-    width: 5rem;
-    height: 5rem;
-}
-/*phone div*/
-.phone{
-    display: none;
-}
-.navbar a:hover {
-    background-color: #ebebeb;
-    color: black;
-}
-
 form .form-group textarea{
     margin-right: 1vw;
     width: 40vw;
@@ -222,87 +402,11 @@ form .form-group textarea{
     border-width: 0.1rem;
     font-size: 0.9rem;
 }
-/* div showing info */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-}
-.container section {
-    flex-basis: 28vw;
-    border-radius: 0.5rem;
-    margin: 0.3rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.75rem;
-    text-align: center;
-    background-color: #ffffff;
-
-}
-.container section:hover{
-    box-shadow: 0 0 0 2px rgba(151, 149, 149, 0.5);
-}
-.container_intro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    margin-top: 0.2rem;
-}
-.container_intro section {
-    flex-basis: 40vw;
-    border-radius: 0.5rem;
-    margin: 0.3rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.75rem;
-    text-align: center;
-    background-color: #ffffff;
-
-}
-.container_intro section:hover{
-    /*border: solid #d8d8d8;
-    border-width: 0.2rem;*/
-    box-shadow: 0 0 0 2px rgba(151, 149, 149, 0.5);
-}
-p {
-    color: #080808;
-    text-align: left;
-    font-size: 1rem;
-    font-family: sans-serif;
-}
-.container section p button{
-    background-color: #d6d6d6;
-    font-size: 2.5vw;
-    border: solid #bbb9b9;
-    border-radius: 1rem;
-    border-width: 1.5px;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    height: 1.5rem;
-}
-.container section img {
-    height: 28vw;
-    width: 28vw;
-    text-align: center;
-}
-
 /*header style*/
 h1 {
     font-family: sans-serif; /* Replace with your preferred font */
     font-size: 5vw;
 }
-/*body*/
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f0e9e9;
-}
-
 /*footer*/
 footer {
     display: flex;
@@ -310,29 +414,36 @@ footer {
     justify-content: center;
     position: relative;
     z-index: 4;
-    background-color: #dfdede;
+    background-color: #b4b2b2;
     margin-top: auto;
     font-size: 1rem;
 }
+/*footer section*/
 footer section {
     flex-basis: 45%;
     margin-top: 3vh;
     margin-bottom: 2vh;
 }
-
+/*foter links*/
 footer section a{
     text-decoration-line: none;
     color: purple;
     cursor: pointer;
 }
+/*footer class in footer*/
 .footer_sect{
     display: flex;
 }
-.footer_sect img{
-    height: 2.5rem;
-    width: 2.5rem;
-    margin: 0.1rem;
+#credits{
+    flex-basis: 90%;
 }
+/*footer images*/
+.footer_sect img{
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 0.2rem;
+}
+/*footer class links*/
 .footer_sect a{
     margin-top: 0.3rem;
     margin-left: 0.2rem;
@@ -356,69 +467,6 @@ footer section a{
     width: 100%;
     opacity: 0.7;
   }
-/* elements over the slideshow */
-.text {
-    font-size: 15px;
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-    text-align: center;
-}
-/*search bar*/
-  .text .search{
-    bottom: 3rem;
-    display: flex;
-    justify-content: center;
-    height: 2.5rem;
-    position: relative;
-    z-index: 2;
-
-  }
-  /* Style the search bar */
-.text .search input[type="search"] {
-    width: 18rem; 
-    border: solid rgb(107, 105, 105);
-    border-width: 1px;
-    margin-right: 0.2rem;
-    border-radius: 0.75rem;
-    background-color: #ffffff;
-    color: #070707; 
-    font-family: sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.text .search input[type="submit"] {
-    width: 5rem; 
-    border: solid rgb(107, 105, 105);
-    border-width: 1px;
-    border-radius: 0.75rem;
-    background-color: #f3f3f3; 
-    color: #070707; 
-    font-family: sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.text .search input[type="submit"]:hover{
-    background-color: #c7d7e0;;
-}
-  .text h1{
-    margin-bottom: 15vh;
-    font-size: 2.5rem;
-    color: #3b2828;
-  }
-  .text a button{
-    font-size: 1.4rem;
-    text-decoration: none;
-    border-radius: 0.75rem;
-    font-family: sans-serif;
-    height: 2.5rem;
-    width: 16rem;
-    background-color: #d1d1d1;
-    cursor: pointer;
-  }
-  .text a button:hover{
-    background-color: #c7d7e0;;
-  }
 /*FAQs list*/
 .container section ul{
     width: auto;
@@ -435,6 +483,8 @@ footer section a{
 }
 /* CSS for small devices like portrait phones, less than 768px */
 @media only screen and (max-width: 450px) {
+/*buttons outside containers*/
+
 /*table data*/
 td {
     border: 1px solid black;
@@ -524,7 +574,6 @@ form .submit input[type="submit"]{
 /*appointment button in services page*/
 .appointment{
     bottom: 3rem;
-    right: 0%;
 }
 
 .appointment a button{
@@ -533,21 +582,10 @@ form .submit input[type="submit"]{
     height: 2.5rem;
     width: 12rem;
 }
-/*footer section*/
-footer section {
-        flex-basis: 45%;
-        margin-top: 3vh;
-        margin-bottom: 2vh;
-}
 /*footer section containing icons*/
 .footer_sect img{
     height: 1.5rem;
     width: 1.5rem;
-    margin-bottom: 0.1rem;
-}
-/*credits section in the footer*/
-footer #credits{
-    flex-basis: 90%;
 }
 /*footer*/
 footer {
@@ -567,13 +605,14 @@ p{
     font-size: 0.85rem;
 }
 .container section img{
-    width: 35vw;
-    height: 35vw;
+    width: 40vw;
+    height: 40vw;
 }
 /*container holding most of the content on the page*/
 .container section {
-    flex-basis: 35vw;
-    margin-left: auto;
+    flex-basis: 38vw;
+    border-radius: 0.4rem;
+    margin: 0.4rem;
 }
 /*intro container in home page*/
 .container_intro section {
@@ -582,12 +621,10 @@ p{
 /*buttons*/
 .container_intro section p button{
     font-size: 0.8rem;
-    border: solid #bbb9b9;
     border-radius: 0.5rem;
     border-width: 1.5px;
     cursor: pointer;
     height: 1.5rem;
-    background-color: rgb(211, 206, 206);
 }
 /*header welcome message*/
 .text h1{
@@ -641,7 +678,6 @@ p{
 }
 /*phone div*/
 .phone{
-    background-color: white;
     padding-top: 0.75rem;
     width: 100vw;
     display: flex;
@@ -656,9 +692,9 @@ p{
 }
 /*div above the navigation bar*/
 .phone p{
-    padding-top: 0.75rem;
-    padding-left: 0.75rem;
-    font: 1.2rem;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+    padding-left: 0.1% ;
     font-family: sans-serif;
 }
 /*menu tab*/
@@ -669,13 +705,8 @@ p{
 }
 /* Navigation Bar Styles */
 .navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #ffffff;
     height: 4rem;
-    position: sticky;
     top: 0rem;
-    z-index: 3;
 }
 /*navigation bar links*/
 .navbar a {
@@ -689,5 +720,205 @@ p{
     text-decoration: none;
     font-size: 0.9rem;
     font-family: sans-serif;
+}
+/*buttons outside containers*/
+.button{
+    width: 70vw;
+}
+}
+/*css for large devices like laptops and desktops*/
+@media only screen and (min-width: 750px){
+/*large screen navbar*/
+.large {
+    display: flex;
+    justify-content: center;
+    background-color: #d5eef1;
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    width: 100vw;
+}
+/*large navbar links*/
+.large a {
+    display: flex;
+    flex-grow: 0.1;
+    justify-content: center;
+    align-items: center;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    margin-left: 0%;
+}
+/*hide navbar for small screens*/
+.navbar{
+    display: none;
+}
+/*table data*/
+td {
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+li{
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+/*iframe holding map*/
+.container_intro section iframe{
+    width: 80vw;
+    height: 60vh;
+}
+/*feedback text area*/
+form .form-group textarea{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80vw;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+/*dropdown menu in booking form*/
+form .form-group select{
+    width: 50vw;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+}
+/* Style each form group (label and input) */
+form .form-group {
+    justify-content: centre;
+    margin: 0.5rem;
+}
+/*form labels*/
+form .form-group label{
+    margin-left: 1vw;
+    margin-right: 1rem;
+    width: 20vw;
+    font-size: 0.9rem;
+}
+/*form input fields*/
+form .form-group input{
+    width: 50vw;
+    height: 1.3rem;
+    border-radius: 0.4rem;
+    border-width: 0.1rem;
+    font-size: 0.8rem;
+}
+/*form submit button*/
+form .submit input[type="submit"]{
+    font-size: 0.9rem;
+    height: 1.6rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+}
+/*links in the forms*/
+.form_link a{
+    text-decoration: none;
+    margin: 0.5rem;
+    font-size: 0.85rem;    
+}
+/*appointment button in services page*/
+.appointment a button{
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 30vw;
+}
+/*footer section containing icons*/
+.footer_sect img{
+    height: 1.8rem;
+    width: 1.8rem;
+}
+/*footer*/
+footer {
+    font-size: 1rem;
+}
+/*header in the containers*/
+.container h4{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+/*view more buttons*/
+.container section p button{
+    font-size: 0.8rem;
+    border: solid #d5eef1;
+    border-radius: 0.4rem;
+    border-width: 1px;
+    height: 1.2rem;
+}
+.container section img{
+    width: 20vw;
+    height: 20vw;
+}
+/*container holding most of the content on the page*/
+.container section {
+    flex-basis: 23vw;
+    border-radius: 0.5rem;
+    margin: 0.4rem;
+}
+/*intro container in home page*/
+.container_intro section {
+    flex-basis: 40vw;
+}
+/*p styles*/
+p{
+    font-size: 1rem;
+}
+/*header welcome message*/
+.text h1{
+    bottom: 15vh;
+    font-size: 3rem;
+}
+/*search bar*/
+.text .search{
+    bottom: 3vh;
+}
+/*search bar input */
+.text .search input[type="search"] {
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1rem;
+}
+/*search button*/
+.text .search input[type="submit"] {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+}
+/*appointment booking button*/
+.text a button{
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 18rem;
+}
+/*logo shown on top of navbar*/
+#phone_logo {
+    width: 4rem;
+    height: 4rem;
+    padding-left: 0.5rem;
+}
+/*div above the navigation bar*/
+.phone p{
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+}
+/*arrows outside containers*/
+.button a img{
+    height: 3.5rem;
+    width: 8rem;
+}
+/*buttons outside containers*/
+.button{
+    width: 30vw;
+}
+.button p{
+    font-size: 1.2rem;
+    margin-top: 5rem;
 }
 }
