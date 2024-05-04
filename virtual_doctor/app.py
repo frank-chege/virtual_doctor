@@ -21,7 +21,7 @@ app = Flask(__name__)
 app.secret_key = os.getenv('APP_KEY')
 
 #create an engine
-engine = create_engine('sqlite:///naismart.db')
+engine = create_engine('sqlite:///virtual_doctor.db')
 #create the tables defined by the classes
 Base.metadata.create_all(engine)
 

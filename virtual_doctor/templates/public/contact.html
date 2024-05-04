@@ -3,7 +3,14 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>NAISMART</title>
+        <meta name="description" content="Welcome to Our Hospital, a leading healthcare
+         provider offering comprehensive healthcare services including emergency care,
+          pediatric care, cardiology, orthopedics, maternity care, neurology, oncology,
+           and mental health services. Experience our state-of-the-art virtual doctor 
+           service for online consultations. Our team of expert doctors and nurses are 
+           dedicated to providing the highest quality of care. Book your appointment today 
+           for top-notch medical services.">
+        <title>Virtual Doctor | telemedicine | health | hospital</title>
         <link rel="icon" type="image/jpeg" href="{{url_for('static', filename='images/logo.jpeg')}}">
         <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5632460936680731"
@@ -18,30 +25,40 @@
           <p><i><strong>"Your health matters to us"</strong></i></p>
         </div>
         <div class="navbar">
-            <a href="{{url_for('home')}}">
-            <img src="{{url_for('static', filename='images/logo.jpeg')}}" alt="logo" id="logo">
-            </a>
             <a href="{{url_for('home')}}">Home</a>
             <a href="{{url_for('services')}}">Services</a>
             <a href="{{url_for('sign_in')}}">Client portal</a>
             <a>
                 <img src="{{url_for('static', filename='images/menu.jpeg')}}" alt="Menu tab" onclick="coll_cont(event)" id="menu_img">
             </a>
-            </div> 
+        </div> 
+        <!--side menu-->
         <div class="cont">
-          <div class="phone">
+          <br>
             <img src="{{url_for('static', filename='images/logo.jpeg')}}" alt="logo" id="phone_logo">
-          </div>
-            <a href="{{url_for('staff')}}">Our staff</a>
+          
+            <a href="{{url_for('staff')}}">Staff</a>
             <a href="{{url_for('forums')}}">Forums</a>
             <a href="{{url_for('gallery')}}">Gallery</a>
-            <a href="{{url_for('about')}}">About us</a>
-            <a href="{{url_for('contact')}}">Contact us</a>
+            <a href="{{url_for('about')}}">About</a>
+            <a href="{{url_for('contact')}}">Contact</a>
             <a href="{{url_for('help')}}">Help</a>
         </div>
+            <!--navbar for large devices-->
+            <div class="large">
+              <a href="{{url_for('home')}}">Home</a>
+              <a href="{{url_for('services')}}">Services</a>
+              <a href="{{url_for('sign_in')}}">Client portal</a>
+              <a href="{{url_for('staff')}}">Staff</a>
+              <a href="{{url_for('forums')}}">Forums</a>
+              <a href="{{url_for('gallery')}}">Gallery</a>
+              <a href="{{url_for('about')}}">About</a>
+              <a href="{{url_for('contact')}}">Contact</a>
+              <a href="{{url_for('help')}}">Help</a>
+            </div>
 
-        <br>
-        <div class="container_intro">
+<br>
+        <div class="container_info">
             <section>
                 <h4>Contact Us:</h4>
                 <p>
@@ -54,6 +71,15 @@
                 <h4>Or visit us today:</h4>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.236655669125!2d36.81434826977538!3d-1.2886929999999934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11747e756f41%3A0x146973898c119b47!2sKenyatta%20International%20Convention%20Centre!5e0!3m2!1sen!2ske!4v1713209859300!5m2!1sen!2ske" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
+
+            <section>
+                <h4>Feedback:</h4>
+                <p style="margin-left: 1rem; margin-right: 1rem;">
+                    We value your feedback. Please send us any comments,
+                    complains or queries you have concerning our services.
+                    Fill the form below to submit your feedback.
+                </p>
+            </section>
         </div>
 
             <section class="section">
@@ -62,16 +88,10 @@
 
                     <div class="container">
                         <h3 style="margin-bottom: auto;">
-                            Feedback:
+                            Send us your feedback
                         </h3>
-                    </div>
+                    </div><br>
 
-                    <div class="container">
-                        <p style="margin-left: 1rem; margin-right: 1rem;">
-                            We value your feedback. Please send us any comments,
-                            complains or queries you have concerning our services.
-                        </p>
-                    </div>
                     <div class="container">
                         {% with flash_msg = get_flashed_messages() %}
                             {% if flash_msg %}

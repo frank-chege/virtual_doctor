@@ -168,7 +168,7 @@ section .button a img{
 .text h1{
     margin-bottom: 15vh;
     font-size: 2.5rem;
-    color: #3b2828;
+    color: #141936;
 }
 /*landing page booking button*/
 .text a button{
@@ -202,7 +202,7 @@ section .button a img{
     font-family: sans-serif;
     height: 3rem;
     width: 18rem;
-    background-color: #72c6cf;
+    background-color: #bfe5e9;
     cursor: pointer;
     align-self: flex-end;
 }
@@ -212,10 +212,33 @@ section .button a img{
 }
 /*body*/
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     width: 100vw;
+    min-height: 100vh;
     background-color: #f0ffef;
+}
+/*information containers on about, help, etc pages*/
+.container_info {
+    display: block;
+    margin-top: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+.container_info section {
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+/*iframe holding map*/
+.container_info section iframe{
+    width: 70vw;
+    height: 90vh;
 }
 /*landing page intro container*/
 .container_intro {
@@ -238,11 +261,6 @@ body {
 /*h3*/
 h3{
     text-align: center;
-}
-.container_intro section:hover{
-    /*border: solid #d8d8d8;
-    border-width: 0.2rem;*/
-    box-shadow: 0 0 0 2px rgba(151, 149, 149, 0.5);
 }
 /* content container*/
 .container {
@@ -297,18 +315,17 @@ p {
 section form{
     display: block;
     border-radius: 1rem;
-    width: 55vw;
+    width: 60vw;
     background-color: #ffffff;
 }
 /* Style each form group (label and input) */
 form .form-group {
     display: block;
-    justify-content: centre;
-    margin: 0.5rem;
+    align-items: centre;
+    margin-left: 6vw;
 }
 /*form labels*/
 form .form-group label{
-    text-align: left;
     margin: 0.3rem;
     width: 20vw;
     font-size: 1rem;
@@ -316,18 +333,17 @@ form .form-group label{
 /*form input fields*/
 form .form-group input{
     margin: 0.3rem;
-    width: 40vw;
-    height: 1.5rem;
+    width: 45vw;
+    height: 1.8rem;
     border-radius: 0.3rem;
     border-width: 0.1rem;
     font-size: 0.9rem;
 }
 
 form .form-group select{
-    margin-right: 1vw;
-    width: 40vw;
+    width: 45vw;
     height: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     font-size: 1rem;
 }
 form .submit{
@@ -335,50 +351,62 @@ form .submit{
     margin-bottom: 2vh;
 }
 form .submit input[type="submit"]{
-    font-size: 2.5vw;
+    font-size: 1.1rem;
     margin: 1rem;
     height: 2rem;
-    width: 6rem;
+    width: 7rem;
     border-radius: 0.5rem;
-
+    background-color: #d5eef1;
+    border-width: 0.1rem;
+}
+/*text area field in feedback form*/
+form .form-group textarea{
+    margin: 0.3rem;
+    width: 45vw;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    font-size: 0.9rem;
 }
 /*links in the forms*/
 .form_link a{
     text-decoration: none;
-    margin: 1.2rem;
+    margin: 7vw;
 }
 /* Change the background color of the submit button when hovered over */
 input[type="submit"]:hover {
-    background-color:  #c2c2c2;
+    background-color:  #38a3e0;
     cursor: pointer;
 }
-
+/*records table*/
 .table {
-    position: relative;
-    z-index: 2;
-    border: 1px solid #0a0a0a;
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-color: white;
-    margin: auto;
-    
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
 }
+/*table heading*/
 .table h3{
     text-align: center;
+    padding-top: 1rem;
 }
 table{
     width: 75vw;
     border-collapse: collapse;
 }
+/*table header*/
 th {
     border: 1px solid black;
     padding: 2px;
 }
+/*table data*/
 td {
     border: 1px solid black;
     text-align: center;
     border-collapse: collapse;
     font-size: 1rem;
 }
+/*list*/
 .container ul{
     width: 75vw;
 }
@@ -386,21 +414,6 @@ li{
     text-align: left;
     font-size: 1rem;
     font-family: sans-serif;
-}
-div h2{
-        display: flex;
-        justify-content: center;
-}
-h2{
-    display: flex;
-    justify-content: center;
-}
-form .form-group textarea{
-    margin-right: 1vw;
-    width: 40vw;
-    border-radius: 0.5rem;
-    border-width: 0.1rem;
-    font-size: 0.9rem;
 }
 /*header style*/
 h1 {
@@ -483,40 +496,32 @@ footer section a{
 }
 /* CSS for small devices like portrait phones, less than 768px */
 @media only screen and (max-width: 450px) {
-/*buttons outside containers*/
-
+/*information containers on about, help, etc pages*/
+.container_info {
+    width: 90vw;
+}
+th{
+    font-size: 0.9rem;
+}
+/*table*/
+.table{
+    width: 90vw;
+}
+table{
+    width: 90vw;
+}
 /*table data*/
 td {
-    border: 1px solid black;
-    text-align: center;
-    border-collapse: collapse;
     font-size: 0.9rem;
 }
+/*list*/
 li{
-    text-align: left;
     font-size: 0.9rem;
-    font-family: sans-serif;
 }
 /*iframe holding map*/
-.container_intro section iframe{
+.container_info section iframe{
     width: 80vw;
-    height: 60vh;
-}
-/*feedback text area*/
-form .form-group textarea{
-    margin-right: auto;
-    margin-left: auto;
-    width: 80vw;
-    font-size: 0.9rem;
-    font-family: sans-serif;
-}
-
-/*dropdown menu in booking form*/
-form .form-group select{
-    width: 50vw;
-    height: 1.5rem;
-    border-radius: 0.4rem;
-    font-size: 0.9rem;
+    height: 70vh;
 }
 /*icons on forms*/
 #icon{
@@ -534,42 +539,50 @@ form .form-group select{
 /*forms*/
 section form{
     border-radius: 0.75rem;
-    width: 90vw;
+    width: 15rem;
     font-size: 0.9rem;
 }
 /* Style each form group (label and input) */
 form .form-group {
     justify-content: centre;
-    margin: 0.5rem;
+    margin-left: 1rem;
 }
 /*form labels*/
 form .form-group label{
-    margin-left: 1vw;
-    margin-right: 1rem;
-    width: 20vw;
     font-size: 0.9rem;
 }
 /*form input fields*/
 form .form-group input{
-    width: 50vw;
-    height: 1.3rem;
+    width: 12rem;
+    height: 1.6rem;
     border-radius: 0.4rem;
     border-width: 0.1rem;
     font-size: 0.8rem;
 }
+/*dropdown menu in booking form*/
+form .form-group select{
+    width: 12rem;
+    height: 1.6rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+}
+/*feedback text area*/
+form .form-group textarea{
+    width: 13rem;
+    font-size: 0.8rem;
+}
 /*form submit button*/
 form .submit input[type="submit"]{
-    font-size: 0.9rem;
-    height: 1.6rem;
-    width: 5rem;
+    font-size: 1rem;
+    height: 1.7rem;
+    width: 6rem;
     border-radius: 0.5rem;
     border-width: 0.1rem;
 }
 /*links in the forms*/
 .form_link a{
     text-decoration: none;
-    margin: 0.5rem;
-    font-size: 0.85rem;    
+    font-size: 0.9rem;    
 }
 /*appointment button in services page*/
 .appointment{
@@ -755,72 +768,49 @@ p{
 .navbar{
     display: none;
 }
-/*table data*/
-td {
-    border: 1px solid black;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 0.9rem;
-}
-li{
-    text-align: left;
-    font-size: 0.9rem;
-    font-family: sans-serif;
-}
-/*iframe holding map*/
-.container_intro section iframe{
-    width: 80vw;
-    height: 60vh;
-}
-/*feedback text area*/
-form .form-group textarea{
-    margin-right: auto;
-    margin-left: auto;
-    width: 80vw;
-    font-size: 0.9rem;
-    font-family: sans-serif;
-}
-
-/*dropdown menu in booking form*/
-form .form-group select{
-    width: 50vw;
-    height: 1.5rem;
-    border-radius: 0.4rem;
-    font-size: 0.9rem;
+/*adjust form width*/
+.section form{
+    width: 24rem;
 }
 /* Style each form group (label and input) */
 form .form-group {
-    justify-content: centre;
-    margin: 0.5rem;
+    margin-left: 2rem;
 }
 /*form labels*/
 form .form-group label{
-    margin-left: 1vw;
-    margin-right: 1rem;
-    width: 20vw;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 /*form input fields*/
 form .form-group input{
-    width: 50vw;
-    height: 1.3rem;
+    width: 20rem;
+    height: 2rem;
     border-radius: 0.4rem;
     border-width: 0.1rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+/*dropdown menu in booking form*/
+form .form-group select{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
 }
 /*form submit button*/
 form .submit input[type="submit"]{
-    font-size: 0.9rem;
-    height: 1.6rem;
-    width: 5rem;
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 8rem;
     border-radius: 0.5rem;
     border-width: 0.1rem;
 }
+/*feedback text area*/
+form .form-group textarea{
+    width: 21rem;
+}
 /*links in the forms*/
 .form_link a{
-    text-decoration: none;
-    margin: 0.5rem;
-    font-size: 0.85rem;    
+    margin-left: 2rem;
+    font-size: 1rem;    
 }
 /*appointment button in services page*/
 .appointment a button{
