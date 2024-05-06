@@ -23,20 +23,20 @@
           <img src="{{url_for('static', filename='images/logo.jpeg')}}" alt="logo" id="phone_logo">
           </a>
           <p><i><strong>"Your health matters to us"</strong></i></p>
-        </div>
-        <div class="navbar">
-            <a href="{{url_for('home')}}">Home</a>
-            <a href="{{url_for('services')}}">Services</a>
-            <a href="{{url_for('sign_in')}}">Client portal</a>
+        
+          <div class="navbar">
+            <a href="{{url_for('sign_in')}}">Sign up</a>
             <a>
                 <img src="{{url_for('static', filename='images/menu.jpeg')}}" alt="Menu tab" onclick="coll_cont(event)" id="menu_img">
             </a>
+          </div>
         </div> 
         <!--side menu-->
         <div class="cont">
           <br>
             <img src="{{url_for('static', filename='images/logo.jpeg')}}" alt="logo" id="phone_logo">
-          
+            <a href="{{url_for('home')}}">Home</a>
+            <a href="{{url_for('services')}}">Services</a>
             <a href="{{url_for('staff')}}">Staff</a>
             <a href="{{url_for('forums')}}">Forums</a>
             <a href="{{url_for('gallery')}}">Gallery</a>
