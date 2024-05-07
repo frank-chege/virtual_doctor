@@ -77,16 +77,18 @@ section .button a img{
     position: sticky;
     top: 0;
     z-index: 3;
-    width: 30vw;
+    width: 40vw;
     margin-left: auto;
     margin-right: 0.5rem;
 }
 .navbar a button{
     padding: 0.3rem;
-    width: 15vw;
+    width: 18vw;
     background-color: rgb(175, 219, 250);
     border-radius: 0.4rem;
     border-width: 0.1rem;
+    font-size: 0.9rem;
+    margin-left: auto;
 }
 /*side menu*/
  .cont{
