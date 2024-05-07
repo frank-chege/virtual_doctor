@@ -82,13 +82,14 @@ section .button a img{
     margin-right: 0.5rem;
 }
 .navbar a button{
-    padding: 0.3rem;
+    padding: 0.4rem;
     width: 18vw;
     background-color: rgb(175, 219, 250);
     border-radius: 0.4rem;
     border-width: 0.1rem;
     font-size: 0.9rem;
-    margin-left: auto;
+    margin-left: 60vw;
+    margin-right: auto;
 }
 /*side menu*/
  .cont{
