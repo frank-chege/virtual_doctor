@@ -52,7 +52,7 @@ section .button a img{
     height: 3.5rem;
     position: relative;
     z-index: 3;
-    padding-left: 0.5rem;
+    padding-left: 0.2rem;
 }
 /*div above the navigation bar*/
 .phone p{
@@ -719,10 +719,8 @@ p{
 }
 /*div above the navigation bar*/
 .phone p{
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     font-size: 0.9rem;
-    padding-left: 0.1% ;
-    font-family: sans-serif;
 }
 /*menu tab*/
 #menu_img{
