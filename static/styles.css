@@ -83,6 +83,7 @@ section .button a img{
 }
 .navbar a button{
     padding: 0.3rem;
+    width: 15vw;
     background-color: rgb(175, 219, 250);
     border-radius: 0.4rem;
     border-width: 0.1rem;
