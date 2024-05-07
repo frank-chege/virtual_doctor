@@ -83,9 +83,9 @@ section .button a img{
 }
 .navbar a button{
     padding: 0.4rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    width: 4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    width: 7rem;
     background-color: rgb(175, 219, 250);
     border-radius: 0.4rem;
     border-width: 0.1rem;
@@ -123,8 +123,8 @@ section .button a img{
 }
 /*side menu image*/
 #menu_img{
-    width: 3rem;
-    height: 3rem;
+    width: 3.2rem;
+    height: 3.2rem;
     margin-top: 0.5rem;
     cursor: pointer;
     margin-bottom: 0.2rem;
@@ -763,32 +763,99 @@ p{
 }
 /*css for large devices like laptops and desktops*/
 @media only screen and (min-width: 750px){
+/*adjust the margin for slideshow container*/
+.slideshow-container{
+    margin-top: auto;
+}
+/*hide phone class shown on small devices*/
+.phone{
+    display: none;
+}
+/*hide phone class shown on small devices*/
+.navbar{
+    display: none;
+}
+/*class containing the logo*/
+.logo{
+    display: flex;
+    margin-right: auto;
+}
+.logo p{
+    margin-top: 2.5rem;
+    margin-left: auto;
+    font-size: 1rem;
+}
 /*large screen navbar*/
 .large {
     display: flex;
-    justify-content: center;
     background-color: #d5eef1;
-    height: 4rem;
+    height: 5rem;
     position: sticky;
     top: 0;
     z-index: 3;
-    width: 100vw;
 }
 /*large navbar links*/
 .large a {
     display: flex;
-    flex-grow: 0.1;
-    justify-content: center;
     align-items: center;
     color: rgb(15, 15, 15);
     text-decoration: none;
     font-size: 1.1rem;
     font-family: sans-serif;
-    margin-left: 0%;
+    padding: 0.5rem;
 }
-/*hide navbar for small screens*/
-.navbar{
+/*links hovering*/
+.large a:hover{
+    background-color: #38a3e0;
+}
+/*remove hover propert on sign in link*/
+#login{
+    background-color: #d5eef1;
+}
+.large a button{
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    width: 8rem;
+    background-color: rgb(175, 219, 250);
+    border-radius: 0.4rem;
+    border-width: 0.1rem;
+    font-size: 1rem;
+    margin-left: auto;
+}
+/*hide dropdown menu*/
+.drop_down ul{
     display: none;
+    background-color: #d5eef1;
+    margin-right: auto;
+    list-style-type: none;
+    width: 8rem;
+    border-radius: 0.5rem;
+    padding: 0%;
+    margin: 0%;
+}
+/*show drop_down menu on hover*/
+.large .drop_down:hover > ul{
+    display: block;
+}
+/*hovering on the dropdown menu*/
+.drop_down ul li a:hover{
+    background-color: #38a3e0;
+}
+/*drop down link*/
+.drop_down p{
+    margin-top: 1.8rem;
+    margin-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1.1rem;
+}
+/*dropdown links*/
+.drop_down a{
+    padding: 0.5rem;
+}
+/*drop down menu icon*/
+#drop{
+    width: 1rem;
+    height: 1rem;
 }
 /*adjust form width*/
 .section form{
