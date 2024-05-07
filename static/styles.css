@@ -59,7 +59,7 @@ section .button a img{
     padding-top: 1rem;
     font-size: 1rem;
     font-family: sans-serif;
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
 }
 /*sign up link*/
 .phone a{
@@ -79,7 +79,7 @@ section .button a img{
     z-index: 3;
     width: 30vw;
     margin-left: auto;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 /*side menu*/
  .cont{
@@ -705,7 +705,7 @@ p{
 }
 /*phone div*/
 .phone{
-    padding-top: 0.75rem;
+    padding-top: 0.5rem;
     width: 100vw;
     display: flex;
 }
@@ -715,12 +715,11 @@ p{
     height: 3rem;
     position: relative;
     z-index: 3;
-    padding-left: 0.5rem;
 }
 /*div above the navigation bar*/
 .phone p{
     padding-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 /*menu tab*/
 #menu_img{
