@@ -52,13 +52,14 @@ section .button a img{
     height: 3.5rem;
     position: relative;
     z-index: 3;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 /*div above the navigation bar*/
 .phone p{
     padding-top: 1rem;
     font-size: 1rem;
     font-family: sans-serif;
+    margin-left: 0.5rem;
 }
 /*sign up link*/
 .phone a{
