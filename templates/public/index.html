@@ -25,7 +25,10 @@
           <p><i><strong>"Your health matters to us"</strong></i></p>
         
           <div class="navbar">
-            <a href="{{url_for('sign_in')}}">Sign up</a>
+            <a href="{{url_for('sign_in')}}">
+              <button>Sign up</button>
+              </a>
+              
             <a>
                 <img src="{{url_for('static', filename='images/menu.jpeg')}}" alt="Menu tab" onclick="coll_cont(event)" id="menu_img">
             </a>
