@@ -16,46 +16,70 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5632460936680731"
      crossorigin="anonymous"></script>
     </head>
-    <body>
         <!-- Navigation Bar -->
         <div class="phone">
           <a href="{{url_for('home')}}">
           <img src="{{url_for('static', filename='images/logo.jpeg')}}" alt="logo" id="phone_logo">
           </a>
-          <p><i><strong>"Your health matters to us"</strong></i></p>
-        </div>
-        <div class="navbar">
-            <a href="{{url_for('home')}}">Home</a>
-            <a href="{{url_for('services')}}">Services</a>
-            <a href="{{url_for('sign_in')}}">Client portal</a>
+          <p><i><strong>"Your health matters"</strong></i></p>
+        
+          <div class="navbar">
+            <a href="{{url_for('sign_in')}}">
+              <button>Sign in</button>
+              </a>
+              
             <a>
                 <img src="{{url_for('static', filename='images/menu.jpeg')}}" alt="Menu tab" onclick="coll_cont(event)" id="menu_img">
             </a>
+          </div>
         </div> 
         <!--side menu-->
         <div class="cont">
           <br>
             <img src="{{url_for('static', filename='images/logo.jpeg')}}" alt="logo" id="phone_logo">
-          
-            <a href="{{url_for('staff')}}">Staff</a>
+            <a href="{{url_for('home')}}">Home</a>
+            <a href="{{url_for('services')}}">Services</a>
             <a href="{{url_for('forums')}}">Forums</a>
             <a href="{{url_for('gallery')}}">Gallery</a>
             <a href="{{url_for('about')}}">About</a>
             <a href="{{url_for('contact')}}">Contact</a>
             <a href="{{url_for('help')}}">Help</a>
         </div>
+        
             <!--navbar for large devices-->
             <div class="large">
+              <div class="logo">
+                <a href="{{url_for('home')}}" class="large_logo">
+                <img src="{{url_for('static', filename='images/logo.jpeg')}}" alt="logo" id="phone_logo">
+                </a>
+                <p><i><strong>"Your health matters"</strong></i></p>
+              </div>
               <a href="{{url_for('home')}}">Home</a>
               <a href="{{url_for('services')}}">Services</a>
-              <a href="{{url_for('sign_in')}}">Client portal</a>
-              <a href="{{url_for('staff')}}">Staff</a>
-              <a href="{{url_for('forums')}}">Forums</a>
-              <a href="{{url_for('gallery')}}">Gallery</a>
               <a href="{{url_for('about')}}">About</a>
               <a href="{{url_for('contact')}}">Contact</a>
+              <div class="drop_down">
+                <p>
+                  Community
+                  <img src="{{url_for('static', filename='images/drop.jpeg')}}" alt="logo" id="drop">
+                </p>
+                
+                <ul>
+                  <li>
+                    <a href="{{url_for('forums')}}">Forums</a>
+                  </li>
+                  <li>
+                    <a href="{{url_for('gallery')}}">Gallery</a>
+                  </li>
+                </ul>
+              </div>
               <a href="{{url_for('help')}}">Help</a>
+              <a href="{{url_for('sign_in')}}" id="login">
+                <button>Sign in</button>
+              </a>
             </div>
+<body>
+
 <br>
 
 <div class="container_info">

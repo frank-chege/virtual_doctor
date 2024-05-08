@@ -88,6 +88,7 @@ section .button a img{
     border-width: 0.1rem;
     font-size: 0.9rem;
     margin-left: auto;
+    cursor: pointer;
 }
 .navbar a button:hover{
     background-color: #38a3e0;
