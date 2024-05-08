@@ -82,10 +82,9 @@ section .button a img{
     margin-right: 0.1rem;
 }
 .navbar a button{
-    padding: 0.4rem;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
-    width: 10rem;
+    width: 7rem;
     background-color: rgb(175, 219, 250);
     border-radius: 0.4rem;
     border-width: 0.1rem;
@@ -244,7 +243,6 @@ body {
     width: 100vw;
     min-height: 100vh;
     background-color: #f0ffef;
-    overflow: hidden;
 }
 /*information containers on about, help, etc pages*/
 .container_info {
