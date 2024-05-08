@@ -79,7 +79,6 @@ section .button a img{
     z-index: 3;
     width: 50vw;
     margin-left: auto;
-    margin-right: auto;
 }
 .navbar a button{
     padding-top: 0.6rem;
@@ -243,6 +242,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     background-color: #f0ffef;
+    overflow-x: hidden;
 }
 /*information containers on about, help, etc pages*/
 .container_info {
@@ -802,6 +802,7 @@ p{
     font-size: 1.1rem;
     font-family: sans-serif;
     padding: 0.5rem;
+    width: 4rem;
 }
 /*links hovering*/
 .large a:hover{
@@ -810,6 +811,7 @@ p{
 /*remove hover propert on sign in link*/
 #login{
     background-color: #d5eef1;
+    width: 9rem;
 }
 .large a button{
     padding-top: 0.6rem;
@@ -820,6 +822,8 @@ p{
     border-width: 0.1rem;
     font-size: 1rem;
     margin-left: auto;
+    margin-right: 1rem;
+    cursor: pointer;
 }
 /*hide dropdown menu*/
 .drop_down ul{
@@ -974,17 +978,6 @@ p{
     font-size: 1.5rem;
     height: 3rem;
     width: 18rem;
-}
-/*logo shown on top of navbar*/
-#phone_logo {
-    width: 4rem;
-    height: 4rem;
-    padding-left: 0.5rem;
-}
-/*div above the navigation bar*/
-.phone p{
-    padding-top: 0.5rem;
-    font-size: 1.2rem;
 }
 /*arrows outside containers*/
 .button a img{
