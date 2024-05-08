@@ -77,7 +77,6 @@ section .button a img{
     position: sticky;
     top: 0;
     z-index: 3;
-    width: 50vw;
     margin-left: auto;
 }
 .navbar a button{
