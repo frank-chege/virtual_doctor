@@ -33,8 +33,6 @@ section .button a img{
 }
 /*phone div*/
 .phone{
-    background-color: white;
-    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     width: 100vw;
     height: 4rem;
@@ -42,9 +40,9 @@ section .button a img{
     background-color: #d5eef1;
     justify-content: left;
     margin-left: auto;
-    position: fixed;
+    position: sticky;
     z-index: 3;
-
+    top: 0%;
 }
 /*logo shown on top of page*/
 #phone_logo {
@@ -74,9 +72,6 @@ section .button a img{
     justify-content: right;
     background-color: #d5eef1;
     height: 4rem;
-    position: sticky;
-    top: 0;
-    z-index: 3;
     margin-left: auto;
 }
 .navbar a button{
