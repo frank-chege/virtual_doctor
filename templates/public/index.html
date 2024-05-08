@@ -25,7 +25,7 @@
         
           <div class="navbar">
             <a href="{{url_for('sign_in')}}">
-              <button>Sign in/Sign up</button>
+              <button>Sign in</button>
               </a>
               
             <a>
@@ -50,7 +50,7 @@
             <!--navbar for large devices-->
             <div class="large">
               <div class="logo">
-                <a href="{{url_for('home')}}">
+                <a href="{{url_for('home')}}" class="large_logo">
                 <img src="{{url_for('static', filename='images/logo.jpeg')}}" alt="logo" id="phone_logo">
                 </a>
                 <p><i><strong>"Your health matters"</strong></i></p>
@@ -76,7 +76,7 @@
               </div>
               <a href="{{url_for('help')}}">Help</a>
               <a href="{{url_for('sign_in')}}" id="login">
-                <button>Sign in/Sign up</button>
+                <button>Sign in</button>
               </a>
             </div>
 <body>

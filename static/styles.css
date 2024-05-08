@@ -83,12 +83,15 @@ section .button a img{
 .navbar a button{
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
-    width: 7rem;
-    background-color: rgb(175, 219, 250);
+    width: 4rem;
+    background-color: rgb(178, 217, 245);
     border-radius: 0.4rem;
     border-width: 0.1rem;
     font-size: 0.9rem;
     margin-left: auto;
+}
+.navbar a button:hover{
+    background-color: #38a3e0;
 }
 /*side menu*/
  .cont{
@@ -804,6 +807,10 @@ p{
     padding: 0.5rem;
     width: 4rem;
 }
+/*stop changing colour when hovering over the logo*/
+.large .logo a:hover{
+    background-color: #d5eef1;
+}
 /*links hovering*/
 .large a:hover{
     background-color: #38a3e0;
@@ -811,13 +818,16 @@ p{
 /*remove hover propert on sign in link*/
 #login{
     background-color: #d5eef1;
-    width: 9rem;
+    width: 6rem;
+}
+.large a button:hover{
+    background-color: #38a3e0;
 }
 .large a button{
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
     width: 8rem;
-    background-color: rgb(175, 219, 250);
+    background-color: rgb(178, 217, 245);
     border-radius: 0.4rem;
     border-width: 0.1rem;
     font-size: 1rem;
@@ -835,6 +845,9 @@ p{
     border-radius: 0.5rem;
     padding: 0%;
     margin: 0%;
+}
+.drop_down ul a{
+    width: 7rem;
 }
 /*show drop_down menu on hover*/
 .large .drop_down:hover > ul{
