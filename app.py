@@ -428,6 +428,14 @@ def sign_out():
     flask_session.pop('cust_id', None)
     return render_template('/public/index.html')
 
+#search bar
+@app.route('/search', methods=['POST'])
+def search():
+    search = request.form['search']
+    #query the db
+    result = session.query(Services.url).filter_by(name=search).first()
+    return render_template('/public/search.html', result=result, search=search)
+    
 #run the app
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

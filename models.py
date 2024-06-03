@@ -90,3 +90,16 @@ class Feedback(Base):
                  name = {self.name}, \
                  email = {self.email})'
 
+#table listing services that are searched
+class Services(Base):
+    __tablename__ = 'services'
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    url = Column(String)
+
+    def __repr__(self):
+        #string rep of the table
+        return f'Services( \
+        name = {self.name} \
+        url = {self.url} \
+        )'
